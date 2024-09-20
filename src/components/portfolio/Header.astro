@@ -5,26 +5,28 @@ import "../../style/header.css";
 import InfoHeader from "../../config/header-info.json";
 ---
 
-<div class="cicle container cicle--1">
-  <img
-    src="../../../public/SVG/Ellipse-blue.svg"
-    class="animate__animated animate__zoomIn animate__delay-2s"
-  />
-</div>
-<div class="cicle container cicle--2">
-  <img
-    src="../../../public/SVG/Ellipse-green.svg"
-    class="animate__animated animate__zoomIn animate__delay-2s"
-  />
-</div>
-<div class="cicle container cicle--3">
-  <img
-    src="../../../public/SVG/Ellipse-blue.svg"
-    class="animate__animated animate__zoomIn animate__delay-2s"
-  />
-</div>
 <header>
-  <section class="content-header container">
+  <div class="container-cicle">
+    <div class="cicle cicle--1">
+      <img
+        src="../../../public/SVG/Ellipse-blue.svg"
+        class="animate__animated animate__zoomIn animate__delay-1s"
+      />
+    </div>
+    <div class="cicle cicle--2">
+      <img
+        src="../../../public/SVG/Ellipse-green.svg"
+        class="animate__animated animate__zoomIn animate__delay-1s"
+      />
+    </div>
+    <div class="cicle cicle--3">
+      <img
+        src="../../../public/SVG/Ellipse-blue.svg"
+        class="animate__animated animate__zoomIn animate__delay-1s"
+      />
+    </div>
+  </div>
+  <section class="content-header container-90">
     <div class="header-grid">
       <div class="info-header">
         {
@@ -91,7 +93,7 @@ import InfoHeader from "../../config/header-info.json";
               >
             </button>
             <button class="btn btn--btn2"
-              >Go To Repository
+              >Repository
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

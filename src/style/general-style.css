@@ -61,12 +61,20 @@
 
 body {
     background: var(--background-dark);
-    position: relative;
     overflow-x: hidden;
+    margin: auto;
+    /* position: relative; */
 }
 
-.container {
+.container-90 {
     width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container-95 {
+    width: 95%;
     max-width: 1400px;
     margin: auto;
     overflow: hidden;
