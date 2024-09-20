@@ -1,0 +1,130 @@
+---
+import "../../style/general-style.css";
+import "../../style/header.css";
+
+import InfoHeader from "../../config/header-info.json";
+---
+
+<div class="cicle container cicle--1">
+  <img
+    src="../../../public/SVG/Ellipse-blue.svg"
+    class="animate__animated animate__zoomIn animate__delay-2s"
+  />
+</div>
+<div class="cicle container cicle--2">
+  <img
+    src="../../../public/SVG/Ellipse-green.svg"
+    class="animate__animated animate__zoomIn animate__delay-2s"
+  />
+</div>
+<div class="cicle container cicle--3">
+  <img
+    src="../../../public/SVG/Ellipse-blue.svg"
+    class="animate__animated animate__zoomIn animate__delay-2s"
+  />
+</div>
+<header>
+  <section class="content-header container">
+    <div class="header-grid">
+      <div class="info-header">
+        {
+          InfoHeader.map((info) => (
+            <div class="info-cesar">
+              <h6 class="margin-24 developer animate__animated animate__backInLeft animate__delay-2s">
+                {info.SubTitle}
+              </h6>
+              <h1 class="margin-24 title animate__animated animate__backInLeft animate__delay-2s">
+                {info.title}
+              </h1>
+              <p class="margin-24 paragraph animate__animated animate__backInLeft animate__delay-2s">
+                {info.Paragraph}
+              </p>
+            </div>
+          ))
+        }
+
+        <div
+          class="details-portfolio animate__animated animate__backInLeft animate__delay-2s"
+        >
+          <div class="detail detail--1">
+            <p class="ph"><strong>+2</strong>Years</p>
+            <p class="sub-ph">Experience</p>
+          </div>
+          <span></span>
+
+          <div class="detail detail--2">
+            <p class="ph"><strong>5</strong></p>
+            <p class="sub-ph">Proyects</p>
+          </div>
+          <span></span>
+
+          <div class="detail detail--3">
+            <p class="ph"><strong>+4</strong>Languages</p>
+            <p class="sub-ph">Programming</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- grid-img-cesar -->
+      <div
+        class="content-presentation animate__animated animate__backInRight animate__delay-2s"
+      >
+        <div class="img-content">
+          <img src="../../../public/IMG/developer.jpg" />
+          <div class="btn-presentation">
+            <button class="btn btn--btn1"
+              >Download CV
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-bar-to-down"
+                ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                  d="M4 20l16 0"></path><path d="M12 14l0 -10"></path><path
+                  d="M12 14l4 -4"></path><path d="M12 14l-4 -4"></path></svg
+              >
+            </button>
+            <button class="btn btn--btn2"
+              >Go To Repository
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-right"
+                ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+                  d="M13 7h-6l4 5l-4 5h6l4 -5z"></path></svg
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    class="tecnology content-presentation animate__animated animate__fadeInUp animate__delay-1s"
+  >
+    <div class="SVG-tecnology container">
+      <img src="../../../public/SVG/Figma.svg" />
+      <img src="../../../public/SVG/VSCODE.svg" />
+      <img src="../../../public/SVG/HTML.svg" />
+      <img src="../../../public/SVG/CSS.svg" />
+      <img src="../../../public/SVG/JS.svg" />
+      <img src="../../../public/SVG/GIT.svg" />
+      <img src="../../../public/SVG/GITHUB.svg" />
+      <img src="../../../public/SVG/TAILWIND.svg" />
+      <img src="../../../public/SVG/REACT.svg" />
+    </div>
+  </div>
+</header>

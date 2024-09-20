@@ -1,0 +1,212 @@
+@import "animate.css";
+
+header {
+    margin-top: 5.5rem;
+}
+
+.cicle img {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    clip-path: circle(50% at 50% 50%);
+
+    z-index: -5;
+}
+
+.cicle--1 img {
+    transform: translate(-50%, 15%);
+}
+
+.cicle--2 img {
+    transform: translate(500px, -30%);
+}
+
+.cicle--3 img {
+    transform: translate(1100px, 60%);
+}
+
+/* Header style */
+
+header .content-header {
+    margin: auto;
+}
+
+header .content-header .header-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    margin-bottom: 60px;
+}
+
+
+header .content-header .header-grid .info-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+header .content-header .header-grid .info-header .info-cesar .margin-24 {
+    margin-bottom: 1rem;
+}
+
+header .content-header .header-grid .info-header .info-cesar .title {
+    font-family: var(--text-title);
+    font-style: bold;
+    color: var(--text-color-green);
+    font-size: 3.6rem;
+    opacity: 0.3;
+}
+
+header .content-header .header-grid .info-header .info-cesar .developer {
+    color: var(--text-color-while);
+    opacity: var(--opacity-30);
+    font-family: var(--text-subtitle);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: var(--font-weight-300);
+}
+
+header .content-header .header-grid .info-header .info-cesar .paragraph {
+    font-size: 0.9rem;
+    font-family: var(--text-paragraph);
+    opacity: var(--opacity-80);
+    font-weight: var(--font-weight-300);
+    color: var(--text-color-while);
+    line-height: 20px;
+}
+
+header .content-header .header-grid .info-header .details-portfolio {
+    display: flex;
+    align-items: center;
+    color: var(--text-color-while);
+    font-family: var(--text-subtitle);
+}
+
+header .content-header .header-grid .info-header .details-portfolio .detail--2 {
+    text-align: center;
+}
+
+header .content-header .header-grid .info-header .details-portfolio .detail .ph {
+    font-size: 0.8rem;
+    font-style: var(--font-weight-500);
+    font-family: var(--text-subtitle);
+    opacity: var(--opacity-80);
+}
+
+header .content-header .header-grid .info-header .details-portfolio .detail p>strong {
+    font-size: 64px;
+}
+
+header .content-header .header-grid .info-header .details-portfolio .detail .sub-ph {
+    text-align: center;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    font-style: var(--font-weight-400);
+    font-family: var(--text-subtitle);
+    opacity: var(--opacity-50);
+}
+
+header .content-header .header-grid .info-header .details-portfolio span {
+    width: 2px;
+    height: 55%;
+    background: var(--primary-color);
+    opacity: var(--opacity-50);
+    border-radius: 50px;
+    margin: auto 1.4rem;
+}
+
+/* ----------------------------------- */
+
+header .content-header .header-grid .content-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+header .content-header .header-grid .content-presentation .img-content {
+    padding: 1rem;
+    width: 100%;
+    height: 30%;
+    display: grid;
+    place-content: end;
+    justify-content: center;
+    border-radius: var(--radius-12);
+    border: 2px solid var(--text-color-green);
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: var(--background-blur-5);
+
+}
+
+header .content-header .header-grid .content-presentation .img-content img {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 85%;
+    min-width: 300px;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-8);
+}
+
+header .content-header .header-grid .content-presentation .img-content img:hover {
+    filter: blur(1px);
+}
+
+header .content-header .header-grid .content-presentation .img-content .btn-presentation,
+header .content-header .header-grid .content-presentation .img-content .btn-presentation button {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header .content-header .header-grid .content-presentation .img-content .btn-presentation button {
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: var(--radius-8);
+    font-family: var(--text-paragraph);
+    font-weight: var(--font-weight-600);
+    font-style: italic;
+}
+
+header .content-header .header-grid .content-presentation .img-content .btn-presentation .btn--btn1 {
+    background: var(--gradient-Buttom);
+}
+
+header .content-header .header-grid .content-presentation .img-content .btn-presentation .btn--btn2 {
+    box-shadow: inset 0 0 0 2px var(--text-color-green);
+    /* borde interno*/
+    color: var(--text-color-green);
+}
+
+
+/* Tecnology bar */
+header .tecnology {
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        /* Gradiente transparente negro */
+        linear-gradient(to right, #3FFCC7, #017DFB);
+    /* Tu gradiente existente */
+}
+
+header .tecnology .SVG-tecnology {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+header .tecnology .SVG-tecnology img {
+    width: 100px;
+    margin: auto 1rem;
+}
+
+
+/* media screem */
+
+/* @media screen and (max-width: 1000px) {
+    header .content-header .header-grid .content-presentation .img-content img {
+    
+    }
+} */

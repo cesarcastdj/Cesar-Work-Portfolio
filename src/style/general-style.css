@@ -1,5 +1,73 @@
+:root {
+    /* background */
+    --background-dark: #051138;
+    --background-light: #d7d9df;
+    --background-blur-10: 10px;
+    --background-blur-5: 5px;
+
+    /* General-Color */
+    --primary-color: #3FFCC7;
+    --secondary-color: #9747FF;
+    --tertiary-color: #2C4AC4;
+
+    /* Typography-Color */
+    --text-color-green: #3FFCC7;
+    --text-color-while: #ffffff;
+    --text-color-black: #28303D;
+
+    /* font-weight */
+    --font-weight-100: 100;
+    --font-weight-200: 200;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+
+    /* Fonfs */
+    --text-title: "Dancing Script", sans-serif;
+    --text-subtitle: "Roboto Mono", sans-serif;
+    --text-paragraph: "Roboto", sans-serif;
+
+    /* Gradients */
+    --gradient-general: linear-gradient(to right, #3FFCC7, #017DFB);
+    --gradient-Buttom: linear-gradient(to right, #3FFCC7, #017DFB);
+
+    /* Opacity */
+    --opacity-90: 0.9;
+    --opacity-80: 0.8;
+    --opacity-70: 0.7;
+    --opacity-60: 0.6;
+    --opacity-50: 0.5;
+    --opacity-40: 0.4;
+    --opacity-20: 0.2;
+    --opacity-30: 0.3;
+
+    /* Border Radius */
+    --radius-8: 8px;
+    --radius-12: 12px;
+
+    /* delay animatios */
+    --animate-delay: 0.5s;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: var(--background-dark);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
 }

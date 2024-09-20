@@ -1,0 +1,110 @@
+.nav {
+    border-bottom: 1px solid #3ffcc657;
+    background: rgba(255, 255, 255, 0.123);
+    backdrop-filter: blur(var(--background-blur-5));
+    padding: 1rem 60px;
+    color: var(--text-color-green);
+    font-family: var(--text-paragraph);
+    font-weight: var(--font-weight-400);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    /* display: none; */
+}
+
+.nav .nav-content .nav-menu-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* display: none; */
+}
+
+.nav .nav-content {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.nav .nav-content .logo img {
+    max-width: 250px;
+    /* width: 25vw; */
+}
+
+.nav .nav-content .links {
+    display: flex;
+    margin: auto;
+}
+
+.nav .nav-content .links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .nav-content .links ul>li {
+    margin-right: 24px;
+    letter-spacing: 1px;
+}
+
+.nav .nav-content .btn-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav-content .btn-nav .nav-contact {
+    display: inline-block;
+    border: 2px solid var(--text-color-green);
+    border-radius: var(--radius-8);
+    font-weight: var(--font-weight-500);
+    font-style: italic;
+    padding: 0.5rem 1.5rem;
+    /* display: none; */
+}
+
+.nav .nav-content>svg {
+    color: inherit;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dar hover a los links */
+
+
+/* Nav responsive */
+
+@media screen and (max-width: 850px) {
+    .nav .nav-content .logo img {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 18px 30px;
+    }
+
+    .nav .nav-content {
+        display: grid;
+        place-content: center;
+    }
+
+    .nav .nav-content .nav-menu-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav .nav-content .logo img {
+        width: 40vw;
+    }
+}

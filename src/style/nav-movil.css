@@ -1,0 +1,94 @@
+.nav-menu-content-movil {
+    width: 100%;
+
+    position: fixed;
+    bottom: 1%;
+    display: none;
+}
+
+.nav-menu-content-movil .links-movil {
+    margin: auto;
+    display: grid;
+    place-content: center;
+    /* width: 90vw; */
+    border-radius: 50px;
+}
+
+.nav-menu-content-movil .links-movil ul {
+    background: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(var(--background-blur-5));
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 0.5rem;
+}
+
+.nav-menu-content-movil .links-movil .item-link {
+    padding: 0.5rem 1rem;
+    opacity: var(--opacity-80);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    border-radius: 50px;
+}
+
+.nav-menu-content-movil .links-movil span {
+    width: 1px;
+    height: 80%;
+    background: var(--primary-color);
+    opacity: var(--opacity-30);
+    margin: auto 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu-content-movil {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav-menu-content-movil {
+        bottom: 0%;
+        background: rgba(255, 255, 255, 0.089);
+        backdrop-filter: blur(var(--background-blur-5));
+        width: 100%;
+    }
+
+    .nav-menu-content-movil .links-movil ul {
+        background: none;
+        backdrop-filter: none;
+        width: 100%;
+        border-radius: 0px;
+        padding: 0.5rem 1.5rem;
+        /* flex-wrap: wrap; */
+    }
+
+    .nav-menu-content-movil .links-movil span {
+        height: 60%;
+        border-radius: 50px;
+        margin: auto 0.3rem;
+    }
+
+    .nav-menu-content-movil .links-movil .item-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.6rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .nav-menu-content-movil {
+        overflow-x: auto;
+    }
+
+    .nav-menu-content-movil .links-movil .item-link {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .nav-menu-content-movil .links-movil ul {
+        padding: 0.5rem;
+    }
+}
