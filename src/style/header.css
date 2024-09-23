@@ -85,9 +85,8 @@ header .content-header .header-grid .info-header .info-cesar .developer {
 header .content-header .header-grid .info-header .info-cesar .paragraph {
     font-size: 0.9rem;
     font-family: var(--text-paragraph);
-    opacity: var(--opacity-80);
     font-weight: var(--font-weight-300);
-    color: var(--text-color-while);
+    color: var(--text-color-while-80);
     line-height: 20px;
 }
 
@@ -186,6 +185,9 @@ header .content-header .header-grid .content-presentation .img-content .btn-pres
 
 header .content-header .header-grid .content-presentation .img-content .btn-presentation .btn--btn1 {
     background: var(--gradient-Buttom);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header .content-header .header-grid .content-presentation .img-content .btn-presentation .btn--btn2 {
@@ -197,7 +199,6 @@ header .content-header .header-grid .content-presentation .img-content .btn-pres
 
 /* Tecnology bar */
 header .tecnology {
-    margin-bottom: 6rem;
     background:
         linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         /* Gradiente transparente negro */
@@ -400,10 +401,14 @@ header .content-header .header-grid {
     header .content-header .header-grid .content-presentation .img-content {
         width: 100%;
     }
-    
-        header .content-header .header-grid .content-presentation .img-content img {
-            width: 80%;
-        }
+
+    header .content-header .header-grid .info-header .info-cesar .paragraph {
+        font-weight: var(--font-weight-500);
+    }
+
+    header .content-header .header-grid .content-presentation .img-content img {
+        width: 80%;
+    }
 
     header .content-header .header-grid .content-presentation .img-content .btn-presentation {
         padding: 0 1rem;

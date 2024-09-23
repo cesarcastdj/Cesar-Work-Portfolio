@@ -1,0 +1,23 @@
+[33mcommit 3691e5a42d56717a8decc7aee7f859a62b784e08[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: cesarcastdj <casaucast@gmail.com>
+Date:   Fri Sep 20 16:19:10 2024 -0400
+
+    Reparación del header listo gracias a dios  20/09/24
+
+[33mcommit a86df409b84c0e2aa680a2bcacb1ef32a2ddc2b2[m
+Author: cesarcastdj <casaucast@gmail.com>
+Date:   Fri Sep 20 02:47:51 2024 -0400
+
+    Creación del header, pero hay que reparar unas cosas que no funcionan como lo responsivo
+
+[33mcommit 5508a06f48deb4d076f3c5452c46549e1ca18b19[m
+Author: Cesar-Dev <cesaucast@gmail.com>
+Date:   Thu Sep 19 23:20:16 2024 -0400
+
+    Creación de archivos del proyecto fase inicial 19/09/24
+
+[33mcommit 6137682d31d4afbc6913678782b7d3b0f9d64d28[m
+Author: houston[bot] <astrobot-houston@users.noreply.github.com>
+Date:   Thu Sep 19 13:12:26 2024 -0400
+
+    Initial commit from Astro

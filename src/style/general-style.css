@@ -15,6 +15,15 @@
     --text-color-while: #ffffff;
     --text-color-black: #28303D;
 
+    /* text-opacity */
+    --text-color-while-90: rgba(255, 255, 255, 0.9);
+    --text-color-while-80: rgba(255, 255, 255, 0.8);
+    --text-color-while-70: rgba(255, 255, 255, 0.7);
+    --text-color-while-60: rgba(255, 255, 255, 0.6);
+    --text-color-while-50: rgba(255, 255, 255, 0.5);
+    --text-color-while-40: rgba(255, 255, 255, 0.4);
+    --text-color-while-30: rgba(255, 255, 255, 0.3);
+
     /* font-weight */
     --font-weight-100: 100;
     --font-weight-200: 200;
@@ -44,6 +53,7 @@
     --opacity-40: 0.4;
     --opacity-20: 0.2;
     --opacity-30: 0.3;
+    --opacity-20: 0.2;
 
     /* Border Radius */
     --radius-8: 8px;
@@ -78,4 +88,15 @@ body {
     max-width: 1400px;
     margin: auto;
     overflow: hidden;
+}
+
+.container-80 {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.margin-24 {
+    margin-bottom: 24px;
 }

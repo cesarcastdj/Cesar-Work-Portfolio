@@ -33,7 +33,7 @@ import InfoHeader from "../../config/header-info.json";
           InfoHeader.map((info) => (
             <div class="info-cesar">
               <h6 class="margin-24 developer animate__animated animate__backInLeft animate__delay-2s">
-                {info.SubTitle}
+                {info.subTitle}
               </h6>
               <h1 class="margin-24 title animate__animated animate__backInLeft animate__delay-2s">
                 {info.title}
@@ -68,11 +68,44 @@ import InfoHeader from "../../config/header-info.json";
       </div>
 
       <!-- grid-img-cesar -->
+      <!-- NOTA: las img deben tener una dimención de 720 x 720 - importante este formato -->
+
       <div
         class="content-presentation animate__animated animate__backInRight animate__delay-2s"
       >
         <div class="img-content">
-          <img src="../../../public/IMG/developer.jpg" />
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../../../public/IMG/developer.jpg"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../public/IMG/developer3.jpg"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../public/IMG/developer4.jpg"
+                  class="d-block w-100"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../../../public/IMG/developer5.jpg"
+                  class="d-block w-100"
+                />
+              </div>
+            </div>
+          </div>
           <div class="btn-presentation">
             <button class="btn btn--btn1"
               >Download CV
@@ -93,7 +126,7 @@ import InfoHeader from "../../config/header-info.json";
               >
             </button>
             <button class="btn btn--btn2"
-              >Repository
+              >Repository Of Code
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -129,4 +162,14 @@ import InfoHeader from "../../config/header-info.json";
       <img src="../../../public/SVG/REACT.svg" />
     </div>
   </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </header>
