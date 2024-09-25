@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/tailwind": "^5.1.1",
     "animate.css": "^4.1.1",
     "astro": "^4.15.8",
     "bootstrap": "^5.3.3",

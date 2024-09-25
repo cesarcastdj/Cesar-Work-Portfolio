@@ -71,7 +71,7 @@ header .content-header .header-grid .info-header .info-cesar .developer {
 header .content-header .header-grid .info-header .info-cesar .paragraph {
     font-size: 0.9rem;
     font-family: var(--text-paragraph);
-    opacity: var(--opacity-80);
+    opacity: var(--opacity-30);
     font-weight: var(--font-weight-300);
     color: var(--text-color-while);
     line-height: 20px;
@@ -95,7 +95,7 @@ header .content-header .header-grid .info-header .details-portfolio .detail .ph 
     opacity: var(--opacity-80);
 }
 
-header .content-header .header-grid .info-header .details-portfolio .detail p>strong {
+header .content-header .header-grid .info-header .details-portfolio .detail p > strong {
     font-size: 64px;
 }
 
