@@ -1,3 +1,5 @@
+@import "animate.css";
+
 .about {
     color: var(--text-color-while);
     margin: 4rem auto;
@@ -5,11 +7,6 @@
 
 .about .info-about {
     text-align: center;
-}
-
-.about .info-about .section-subtitle {
-    font-size: 2rem;
-    opacity: var(--opacity-50);
 }
 
 .about .info-about .section-title {

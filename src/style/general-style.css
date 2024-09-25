@@ -100,3 +100,14 @@ body {
 .margin-24 {
     margin-bottom: 24px;
 }
+
+.margin-24 {
+    margin-bottom: 24px;
+}
+
+.section-subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--text-color-while);
+    opacity: var(--opacity-50);
+}

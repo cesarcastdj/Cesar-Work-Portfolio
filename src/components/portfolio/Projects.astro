@@ -1,0 +1,75 @@
+---
+import "../../style/general-style.css";
+import "../../style/projects.css";
+
+import projects from "../../config/card-projects.json";
+---
+
+<seccion class="project-card">
+  <div class="content-cards container-90">
+    <h3 class="section-subtitle">&lt; My Latest Projects /&gt;</h3>
+    <div class="cards-grid">
+      {
+        projects.map((project) => (
+          <>
+            <div class="card-layout">
+              <div class="img-card">
+                <img src={project.image} />
+              </div>
+              <div class="card-info">
+                <div class="project-dalendary rem-one">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-month"
+                  >
+                    <svg>
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+                      <path d="M16 3v4" />
+                      <path d="M8 3v4" />
+                      <path d="M4 11h16" />
+                      <path d="M7 14h.013" />
+                      <path d="M10.01 14h.005" />
+                      <path d="M13.01 14h.005" />
+                      <path d="M16.015 14h.005" />
+                      <path d="M13.015 17h.005" />
+                      <path d="M7.01 17h.005" />
+                      <path d="M10.01 17h.005" />
+                    </svg>
+                  </svg>
+                  <span>{project.launch}</span>
+                </div>
+                <div class="info--card">
+                  <h4 class="title-card rem-one">{project.title}</h4>
+                  <p class="descrition--card rem-one">{project.descrition}</p>
+                  <a href={project.link} class="link--card">
+                    Go to site
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-circle-arrow-up-right"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-2 4.66h-6l-.117 .007a1 1 0 0 0 -.883 .993l.007 .117a1 1 0 0 0 .993 .883h3.584l-4.291 4.293l-.083 .094a1 1 0 0 0 1.497 1.32l4.293 -4.293v3.586l.007 .117a1 1 0 0 0 1.993 -.117v-6l-.007 -.117l-.029 -.149l-.035 -.105l-.054 -.113l-.071 -.111a1.01 1.01 0 0 0 -.097 -.112l-.09 -.08l-.096 -.067l-.098 -.052l-.11 -.044l-.112 -.03l-.126 -.017l-.075 -.003z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </>
+        ))
+      }
+    </div>
+  </div>
+</seccion>

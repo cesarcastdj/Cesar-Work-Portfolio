@@ -1,0 +1,44 @@
+[
+    {
+        "launch": "10-05-2024",
+        "title": "Legal Solutions",
+        "descrition": "We are a Law Firm Legal Solutions founded in 2010 by a group of fellow lawyers graduated in 2005 and specialized in different areas of it, who decided to partner to create a space dedicated to help. ",
+        "image": "../../public/IMG/Legal-Solutions.png",
+        "link": "https://legal-solutions-2010.netlify.app/"
+    },
+    {
+        "launch": "15-05-2024",
+        "title": "Title of site",
+        "descrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos rerum numquam, minus consequuntur nulla maxime labore commodi ab laudantium.",
+        "image": "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "link": "Go to site"
+    },
+    {
+        "launch": "20-05-2024",
+        "title": "Title of site",
+        "descrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos rerum numquam, minus consequuntur nulla maxime labore commodi ab laudantium.",
+        "image": "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "link": "Go to site"
+    },
+    {
+        "launch": "30-05-2024",
+        "title": "Title of site",
+        "descrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos rerum numquam, minus consequuntur nulla maxime labore commodi ab laudantium.",
+        "image": "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "link": "Go to site"
+    },
+    {
+        "launch": "12-08-2024",
+        "title": "Title of site",
+        "descrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos rerum numquam, minus consequuntur nulla maxime labore commodi ab laudantium.",
+        "image": "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "link": "Go to site"
+    },
+    {
+        "launch": "10-05-2024",
+        "title": "Title of site",
+        "descrition": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos rerum numquam, minus consequuntur nulla maxime labore commodi ab laudantium.",
+        "image": "https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "link": "Go to site"
+    }
+]

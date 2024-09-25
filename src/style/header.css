@@ -36,7 +36,7 @@ header .cicle--2 {
 }
 
 header .cicle--3 {
-    bottom: -0%;
+    bottom: -5%;
     right: 0;
 }
 
@@ -74,7 +74,7 @@ header .content-header .header-grid .info-header .info-cesar .title {
 }
 
 header .content-header .header-grid .info-header .info-cesar .developer {
-    color: var(--text-color-while);
+    color: var(--text-color-while-50);
     opacity: var(--opacity-30);
     font-family: var(--text-subtitle);
     font-size: 1rem;
@@ -153,18 +153,27 @@ header .content-header .header-grid .content-presentation .img-content {
 
 }
 
-header .content-header .header-grid .content-presentation .img-content img {
-    margin: 0 auto;
-    object-fit: cover;
-    width: 85%;
-    min-width: 300px;
-    margin-bottom: 1.5rem;
+header .content-header .header-grid .content-presentation .img-content .carousel {
+}
+
+header .content-header .header-grid .content-presentation .img-content .carousel .carousel-inner {
+    width: 78%;
+    margin: auto;
     border-radius: var(--radius-8);
 }
 
-/* header .content-header .header-grid .content-presentation .img-content img:hover {
-    filter: blur(1px);
-} */
+header .content-header .header-grid .content-presentation .img-content .carousel .carousel-inner .carousel-item {
+    border-radius: var(--radius-8);
+    
+}
+
+header .content-header .header-grid .content-presentation .img-content img {
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+}
 
 header .content-header .header-grid .content-presentation .img-content .btn-presentation,
 header .content-header .header-grid .content-presentation .img-content .btn-presentation button {
@@ -172,6 +181,10 @@ header .content-header .header-grid .content-presentation .img-content .btn-pres
     column-gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+header .content-header .header-grid .content-presentation .img-content .btn-presentation {
+    margin-top: 1.5rem;
 }
 
 header .content-header .header-grid .content-presentation .img-content .btn-presentation button {
@@ -282,6 +295,21 @@ header .tecnology .SVG-tecnology img {
         width: 6.5vw;
         margin: auto 2rem;
     }
+
+    /* header .content-header .header-grid .content-presentation .img-content .carousel img  {
+        width: 95%;
+    } */
+
+    /* header .content-header .header-grid .content-presentation .img-content .carousel {
+        width: 100%;
+        margin: auto;
+    } */
+
+    header .content-header .header-grid .content-presentation .img-content .carousel .carousel-inner {
+        width: 85%;
+        margin: auto;
+        border-radius: var(--radius-8);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -313,6 +341,11 @@ header .content-header .header-grid {
     header .content-header .header-grid .info-header .info-cesar .developer,
     header .content-header .header-grid .info-header .info-cesar .paragraph {
         text-align: center;
+    }
+
+    header .content-header .header-grid .info-header .info-cesar .title {
+        font-size: 8vmin;
+        line-height: 3rem;
     }
     
     header .content-header .header-grid .info-header .details-portfolio {
@@ -360,6 +393,10 @@ header .content-header .header-grid {
         height: 30px;
     }
 
+        header .content-header .header-grid .content-presentation .img-content .carousel .carousel-inner {
+            width: 100%;
+        }
+
     header .content-header .header-grid .content-presentation .img-content {
         padding: 1rem;
         width: 100%;
@@ -371,6 +408,10 @@ header .content-header .header-grid {
         border: 2px solid var(--text-color-green);
         background: rgba(255, 255, 255, 0.20);
         backdrop-filter: var(--background-blur-5);
+    }
+
+    header .content-header .header-grid .content-presentation .img-content .carousel img {
+        width: 95%;
     }
 }
 
@@ -407,7 +448,7 @@ header .content-header .header-grid {
     }
 
     header .content-header .header-grid .content-presentation .img-content img {
-        width: 80%;
+        /* width: 80%; */
     }
 
     header .content-header .header-grid .content-presentation .img-content .btn-presentation {
