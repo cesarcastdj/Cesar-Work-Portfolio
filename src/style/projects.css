@@ -1,0 +1,118 @@
+.project-card {
+    position: relative;
+}
+
+.project-card .content-cards {
+    margin-bottom: 5rem;
+}
+
+.project-card .cicle {
+    position: absolute;
+    width: 500px;
+    top: 0;
+    left: 30%;
+    z-index: -1;
+}
+
+.project-card .cicle img{
+    width: 100%;
+    margin: auto;
+}
+
+/*  style cards */
+
+.rem-one {
+    margin-bottom: 1rem;
+}
+
+.project-card .content-cards .section-subtitle {
+    margin-bottom: 40px;
+}
+
+.project-card .content-cards .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    place-self: center;
+    margin: 0 auto;
+}
+
+.project-card .content-cards .cards-grid .card-layout {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius-8);
+    padding: 1rem;
+    transition: 200ms all linear;
+}
+
+/* Cards hover */
+
+.project-card .content-cards .cards-grid .card-layout:hover {
+    background: var(--secondary-color);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 5px 5px 2px var(--secondary-color);
+}
+
+.project-card .content-cards .cards-grid .card-layout .img-card {
+    margin-bottom: 1rem;
+}
+
+.project-card .content-cards .cards-grid .card-layout .img-card img {
+    border-radius: var(--radius-8);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info {
+    color: var(--text-color-while);
+    font-family: var(--text-paragraph);
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info .project-dalendary {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info .project-dalendary svg {
+    opacity: var(--opacity-90);
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info .project-dalendary span {
+    opacity: var(--opacity-60);
+    font-size: 0.9rem;
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info .info--card .title-card {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-600);
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info .info--card .descrition--card {
+    font-size: 0.9rem;
+    opacity: var(--opacity-60);
+    line-height: 24px;
+}
+
+.project-card .content-cards .cards-grid .card-layout .card-info .info--card .link--card {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .project-card .content-cards .section-subtitle {
+        font-size: 6vmin;
+    }
+
+    .project-card .content-cards .cards-grid .card-layout .card-info .info--card .title-card {
+        font-size: 4.5vmax
+    }
+
+    .project-card .content-cards .cards-grid .card-layout .card-info .project-dalendary svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .project-card .content-cards .cards-grid .card-layout .card-info .project-dalendary span {
+        font-size: 0.8rem;
+    }
+}

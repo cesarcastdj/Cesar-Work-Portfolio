@@ -1,0 +1,39 @@
+@import "animate.css";
+
+.about {
+    color: var(--text-color-while);
+    margin: 4rem auto;
+}
+
+.about .info-about {
+    text-align: center;
+}
+
+.about .info-about .section-title {
+    font-size: 45px;
+    font-weight: var(--font-weight-500);
+}
+
+.about .info-about .section-paragraph {
+    opacity: var(--opacity-80);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about .info-about {
+        width: 90%;
+    }
+
+    .about .info-about .section-title {
+        font-size: 7vmin;
+    }
+
+    .about .info-about .section-subtitle {
+        font-size: 5.5vmin;
+    }
+
+    .about .info-about .section-paragraph {
+        font-size: 4vmin;
+        text-align: justify;
+    }
+}

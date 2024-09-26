@@ -1,0 +1,135 @@
+.figma .figma-content {
+    margin-bottom: 60px;
+}
+
+.figma .figma-content .figma-grid-content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: auto;
+    width: 100%;
+}
+
+.figma .figma-content .figma-grid-content .figma-grid1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--text-color-while);
+}
+
+.figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-12);
+}
+
+.figma .figma-content .figma-grid-content .figma-grid1 .info-figma {
+    margin-bottom: 1rem;
+}
+
+.figma .figma-content .figma-grid-content .figma-grid2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.figma .figma-content .figma-grid-content .figma-grid2 iframe {
+    width: 100%;
+}
+
+.figma img {
+    border-radius: var(--radius-12);
+    width: 100%;
+}
+
+.figma .figma-content .figma-grid-content .figma-grid2 img {
+    width: 49%;
+}
+
+/* style text */
+.figma .figma-content .figma-grid-content .figma-grid1 .info-figma .title-figma {
+    font-family: var(--text-subtitle);
+    font-weight: var(--font-weight-400);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.figma .figma-content .figma-grid-content .figma-grid1 .info-figma .subtitle-figma {
+    opacity: var(--opacity-60);
+    font-family: var(--text-paragraph);
+    font-weight: var(--font-weight-500);
+    font-size: 0.9rem;
+}
+
+.figma .figma-content .figma-grid-content .figma-grid1 .info-figma .paragraph-figma {
+    opacity: var(--opacity-80);
+    font-family: var(--text-paragraph);
+    font-weight: var(--font-weight-400);
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .title-figma {
+        font-size: 4vmin;
+    }
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .subtitle-figma {
+        opacity: var(--opacity-60);
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 {
+            height: 100vh;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 1rem;
+    }
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .title-figma,
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .subtitle-figma,
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .paragraph-figma {
+        text-align: center;
+    }
+
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .title-figma {
+        font-size: 5.5vmin;
+        margin-bottom: 1rem;
+    }
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .info-figma .subtitle-figma {
+        font-size: 0.7rem;
+    }
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 {
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

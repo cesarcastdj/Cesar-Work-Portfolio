@@ -46,18 +46,12 @@ All commands are run from the root of the project, from a terminal:
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-PS C:\Users\Simancas\Desktop\Cesar Portfolio> npm ls
-Simancas@ C:\Users\Simancas
-├── @astrojs/tailwind@5.1.0
-├── animate.css@4.1.1  
-├── astro@4.15.2
-├── bootstrap@5.3.3  
-└── tailwindcss@3.4.10
-
-"dependencies": {
-"@astrojs/check": "^0.9.3",
-"animate.css": "^4.1.1",
-"astro": "^4.15.8",
-"bootstrap": "^5.3.3",
-"typescript": "^5.6.2"
-},
+PS C:\Users\Simancas\Desktop\Cesar-Work-Portfolio> npm ls
+cesar-work-portfolio@0.0.1 C:\Users\Simancas\Desktop\Cesar-Work-Portfolio
+├── @astrojs/check@0.9.3
+├── animate.css@4.1.1
+├── aos@2.3.4
+├── astro@4.15.8
+├── bootstrap@5.3.3
+├── tailwindcss@3.4.12
+└── typescript@5.6.2

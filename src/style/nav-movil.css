@@ -45,6 +45,7 @@
 @media screen and (max-width: 768px) {
     .nav-menu-content-movil {
         display: block;
+        z-index: 5;
     }
 }
 

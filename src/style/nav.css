@@ -12,8 +12,11 @@
     left: 0;
     z-index: 100;
     width: 100%;
+
+    transition: 0.3s linear;
     /* display: none; */
 }
+/* menu dinamico scroll*/
 
 .nav .nav-content .nav-menu-content {
     position: relative;
@@ -21,7 +24,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* display: none; */
 }
 
 .nav .nav-content {
