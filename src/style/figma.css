@@ -125,11 +125,29 @@
     .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 {
         height: 100vh;
         width: 100%;
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
     }
 
     .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 iframe {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .figma .figma-content .figma-grid-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .figma .figma-content .figma-grid-content .figma-grid1 .figma-img1 {
+        height: 100vh;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .figma .figma-content .figma-grid-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
