@@ -1,5 +1,6 @@
 ---
 import "../style/nav.css";
+import "../style/nav-movil.css";
 import "../style/general-style.css";
 ---
 
@@ -17,7 +18,14 @@ import "../style/general-style.css";
         </ul>
       </div>
       <div class="btn-nav">
-        <a href="/" class="nav-contact">My Contacts</a>
+        <button
+          type="button"
+          class="btn btn-primary nav-contact"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          My Contacts
+        </button>
       </div>
     </div>
   </section>

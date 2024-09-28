@@ -56,6 +56,11 @@
     letter-spacing: 1px;
 }
 
+.nav .nav-content .btn-nav .btn {
+    background: none;
+    color: var(--text-color-green);
+}
+
 .nav .nav-content .btn-nav {
     display: flex;
     align-items: center;
