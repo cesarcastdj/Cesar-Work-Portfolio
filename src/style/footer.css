@@ -1,0 +1,19 @@
+footer {
+    background:
+            linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            linear-gradient(to right, #3FFCC7, #017DFB);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-color-while);
+    opacity: var(--opacity-60);
+    font-size: 0.8rem;
+    font-family: var(--text-subtitle);
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        font-size: 2.5vmin;
+    }
+}
