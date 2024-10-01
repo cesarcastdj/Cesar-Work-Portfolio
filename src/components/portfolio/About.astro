@@ -55,28 +55,44 @@ import "../../style/nav-movil.css";
                 </p>
               </div>
               <div class="grid-modal2">
-                <form id="contactForm">
+                <form
+                  id="contactForm"
+                  action="https://formspree.io/f/xldrqvla"
+                  method="POST"
+                >
                   <div class="content-form">
                     <div class="input">
-                      <!-- Input Nombre -->
-                      <input type="text" id="name" placeholder="Your Name" />
-                      <!-- Input Email -->
-                      <input type="email" id="email" placeholder="Your Email" />
+                      <label
+                        ><input
+                          type="text"
+                          id="name"
+                          name="neme"
+                          placeholder="Your Name"
+                        /></label
+                      >
+                      <label
+                        ><input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Your Email"
+                        /></label
+                      >
                     </div>
                     <div class="textarea">
-                      <!-- Textarea -->
                       <textarea
                         id="message"
                         placeholder="How can I help you?"
+                        name="message"
                         maxlength="500"></textarea>
-                      <span class="contador-text" id="char-count">
-                        500/500</span
-                      >
+                      <span class="contador-text" id="char-count">500/Max</span>
                       <div class="error-validation">
                         <span class="validation-error" id="message-error"
                         ></span>
                         <span class="validation-error" id="name-error"></span>
                         <span class="validation-error" id="email-error"></span>
+                        <span class="validation-success" id="form-success"
+                        ></span>
                       </div>
                       <!-- Botón de envío -->
                       <button class="btn-form" type="submit">

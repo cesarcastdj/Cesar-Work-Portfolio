@@ -124,6 +124,14 @@
 .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .input input::placeholder,
 .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .textarea textarea::placeholder {
     color: var(--text-color-green);
+    font-size: 0.8rem;
+    transition: font-size 0.3s ease-out;
+}
+
+.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .input input:hover::placeholder,
+.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .textarea textarea:hover::placeholder {
+    font-size: 1rem;
+    font-weight: var(--font-weight-400);
 }
 
 .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea textarea {

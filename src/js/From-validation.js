@@ -11,6 +11,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   document.getElementById('name-error').textContent = '';
   document.getElementById('email-error').textContent = '';
   document.getElementById('message-error').textContent = '';
+  document.getElementById('form-success').textContent = '';
 
   // Validación 1: Campos vacíos
   if (!name || !email || !message) {
@@ -20,10 +21,10 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     isValid = false;
   }
 
-  // Validación 2: Nombre solo letras
-  const nameRegex = /^[A-Za-z\s]+$/;
+  // Validación 2: Nombre solo letras (incluyendo Ñ y acentos)
+  const nameRegex = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
   if (!nameRegex.test(name)) {
-    document.getElementById('name-error').textContent = 'Name must contain only letters';
+    document.getElementById('name-error').textContent = 'Name must contain only letters.';
     isValid = false;
   }
 
@@ -41,15 +42,23 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   }
 
   if (isValid) {
-    alert('Form is valid and ready to send!');
+    document.getElementById('form-success').textContent = 'Form is valid and ready to send!';
   }
 });
 
-// Contador de caracteres para el textarea
+// Contador de caracteres para el textarea y limitador
 const messageTextarea = document.getElementById('message');
 const characterCounter = document.getElementById('char-count');
 
 messageTextarea.addEventListener('input', function () {
   const remaining = 500 - messageTextarea.value.length;
   characterCounter.textContent = `${remaining}/500`;
+
+  if (remaining < 0) {
+    messageTextarea.value = messageTextarea.value.substring(0, 500);
+    characterCounter.textContent = `0/500`;
+    document.getElementById('message-error').textContent = 'Message cannot exceed 500 characters.';
+  } else {
+    document.getElementById('message-error').textContent = '';
+  }
 });
