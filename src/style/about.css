@@ -1,263 +1,441 @@
 @import "animate.css";
 
 .about {
-    color: var(--text-color-while);
-    margin: 4rem auto;
+  color: var(--text-color-while);
+  margin: 4rem auto;
 }
 
 .about .info-about {
-    text-align: center;
+  text-align: center;
 }
 
 .about .info-about .section-title {
-    font-size: 45px;
-    font-weight: var(--font-weight-500);
+  font-size: 45px;
+  font-weight: var(--font-weight-500);
 }
 
 .about .info-about .section-paragraph {
-    opacity: var(--opacity-80);
-    font-size: 1rem;
+  opacity: var(--opacity-80);
+  font-size: 1rem;
 }
 
 /* syle modal contact */
 
 .about .modal .modal-dialog .modal-content {
-    /* background-image: url(../../public/IMG/wallpper-code.jpg); */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../public/IMG/wallpper-code.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* background-image: url(../../public/IMG/wallpper-code.jpg); */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../public/IMG/wallpper-code.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about .modal .modal-dialog .modal-content .modal-header h4 {
-    font-weight: var(--font-weight-500);
-    font-family: var(--text-subtitle);
+  font-weight: var(--font-weight-500);
+  font-family: var(--text-subtitle);
 }
 
 .about .modal .modal-dialog .modal-content .modal-header,
 .about .modal .modal-dialog .modal-content .modal-footer {
-    color: var(--text-color-black);
-    padding: 0.5rem 1rem;
-    background:
-            linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            /* Gradiente transparente negro */
-            linear-gradient(to right, #3FFCC7, #017DFB);
-        /* Tu gradiente existente */
+  color: var(--text-color-black);
+  padding: 0.5rem 1rem;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    /* Gradiente transparente negro */
+      linear-gradient(to right, #3ffcc7, #017dfb);
+  /* Tu gradiente existente */
 }
 
 .about .modal .modal-dialog .modal-content .modal-body {
-    /* overflow-y: auto; */
+  /* overflow-y: auto; */
 }
 
 .about .modal .modal-dialog .modal-content .modal-body .form-modal {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    font-family: var(--text-paragraph);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  font-family: var(--text-paragraph);
 }
 
 .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  justify-content: center;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal h3 {
-    font-size: 2rem;
-    font-weight: var(--font-weight-600);
-    font-style: italic;
-    margin-bottom: 0.5rem;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  h3 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-600);
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal p {
-    font-weight: var(--font-weight-400);
-    margin-bottom: 0.5rem;
-    opacity: var(--opacity-80);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  p {
+  font-weight: var(--font-weight-400);
+  margin-bottom: 0.5rem;
+  opacity: var(--opacity-80);
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .input {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.5rem;
-    width: 100%;
-    color: var(--text-color-black);
-    font-weight: var(--font-weight-400);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .input {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  color: var(--text-color-black);
+  font-weight: var(--font-weight-400);
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .input input {
-    border-radius: var(--radius-8);
-    padding: 0.5rem 1rem;
-    outline: none;
-    background: none !important;
-    color: var(--text-color-green);
-    border: 1px solid var(--primary-color);
-    width: 100%;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .input
+  input {
+  border-radius: var(--radius-8);
+  padding: 0.5rem 1rem;
+  outline: none;
+  background: none !important;
+  color: var(--text-color-green);
+  border: 1px solid var(--primary-color);
+  width: 100%;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    color: var(--text-color-green);
-    font-weight: var(--font-weight-400);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  color: var(--text-color-green);
+  font-weight: var(--font-weight-400);
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea button {
-    background: var(--gradient-Buttom);
-    padding: 0.5rem;
-    border-radius: var(--radius-12);
-    display: flex;
-    gap: 0.5rem;
-    width: 100%;
-    place-content: center;
-    outline: none;
-    font-weight: var(--font-weight-500);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .textarea
+  button {
+  background: var(--gradient-Buttom);
+  padding: 0.5rem;
+  border-radius: var(--radius-12);
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  place-content: center;
+  outline: none;
+  font-weight: var(--font-weight-500);
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .input input::placeholder,
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .textarea textarea::placeholder {
-    color: var(--text-color-green);
-    font-size: 0.8rem;
-    transition: font-size 0.3s ease-out;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .input
+  input::placeholder,
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .textarea
+  textarea::placeholder {
+  color: var(--text-color-green);
+  font-size: 0.8rem;
+  transition: font-size 0.3s ease-out;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .input input:hover::placeholder,
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .textarea textarea:hover::placeholder {
-    font-size: 1rem;
-    font-weight: var(--font-weight-400);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .input
+  input:hover::placeholder,
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .textarea
+  textarea:hover::placeholder {
+  font-size: 1rem;
+  font-weight: var(--font-weight-400);
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea textarea {
-    width: 100%;
-    height: 150px;
-    border: none;
-    resize: none;
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-8);
-    border: 1px solid var(--primary-color);
-    background: none;
-    outline: none;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .textarea
+  textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  resize: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-8);
+  border: 1px solid var(--primary-color);
+  background: none;
+  outline: none;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea button {
-    color: var(--text-color-black);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .textarea
+  button {
+  color: var(--text-color-black);
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea .error-validation {
-    text-align: center;
-    background: var(--secondary-color);
-    border-radius: var(--radius-12);
-    font-size: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .textarea
+  .error-validation {
+  text-align: center;
+  background: var(--secondary-color);
+  border-radius: var(--radius-12);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal .grid-modal2 .content-form .textarea .contador-text {
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: end;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .grid-modal
+  .grid-modal2
+  .content-form
+  .textarea
+  .contador-text {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: end;
 }
 
 .about .modal .modal-dialog .modal-content .modal-body .form-modal .SVG-modal {
-    width: 100%;
-    display: flex;
-    place-content: center;
+  width: 100%;
+  display: flex;
+  place-content: center;
 }
 
-.about .modal .modal-dialog .modal-content .modal-body .form-modal .SVG-modal img {
-    width: 80%;
-    object-fit: contain;
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .form-modal
+  .SVG-modal
+  img {
+  width: 80%;
+  object-fit: contain;
 }
 
 .about .modal .modal-dialog .modal-content .modal-footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .about .modal .modal-dialog .modal-content .modal-footer .link-social {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .about .modal .modal-dialog .modal-content .modal-footer .barra {
-    background: var(--text-color-black);
-    opacity: var(--opacity-50);
+  background: var(--text-color-black);
+  opacity: var(--opacity-50);
 }
 
 .about .modal .modal-dialog .modal-content .modal-footer .link-social a {
-    border: 1px solid var(--text-color-black);
-    border-radius: 50px;
-    padding: 0.5rem;
-    transition: background 0.3s linear;
+  border: 1px solid var(--text-color-black);
+  border-radius: 50px;
+  padding: 0.5rem;
+  transition: background 0.3s linear;
 }
 
 .about .modal .modal-dialog .modal-content .modal-footer .link-social a:hover {
-    background: var(--secondary-color);
-    border: 1px solid var(--text-color-while);
+  background: var(--secondary-color);
+  border: 1px solid var(--text-color-while);
 }
 
-.about .modal .modal-dialog .modal-content .modal-footer .link-social a:hover > svg {
-    color: var(--text-color-while);
+.about
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-footer
+  .link-social
+  a:hover
+  > svg {
+  color: var(--text-color-while);
 }
 
-.about .modal .modal-dialog .modal-content .modal-footer .link-social a > svg{
-    color: var(--text-color-black);
-    width: 30px;
-    height: 30px;
+.about .modal .modal-dialog .modal-content .modal-footer .link-social a > svg {
+  color: var(--text-color-black);
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 1200px) {
-    .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal h3 {
-        font-size: 5vmin;
-    }
+  .about
+    .modal
+    .modal-dialog
+    .modal-content
+    .modal-body
+    .form-modal
+    .grid-modal
+    h3 {
+    font-size: 5vmin;
+  }
 
-    .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal p {
-        font-size: 0.9rem;
-    }
+  .about
+    .modal
+    .modal-dialog
+    .modal-content
+    .modal-body
+    .form-modal
+    .grid-modal
+    p {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal h3 {
-        font-size: 5vmin;
-        text-align: center;
-    }
-    
-    .about .modal .modal-dialog .modal-content .modal-body .form-modal .grid-modal p {
-        background: rgba(0, 0, 0, 0.8);
-        font-size: 0.8rem;
-        text-align: center;
-        border-radius: var(--radius-8);
-    }
-}
+  .about
+    .modal
+    .modal-dialog
+    .modal-content
+    .modal-body
+    .form-modal
+    .grid-modal
+    h3 {
+    font-size: 5vmin;
+    text-align: center;
+  }
 
+  .about
+    .modal
+    .modal-dialog
+    .modal-content
+    .modal-body
+    .form-modal
+    .grid-modal
+    p {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: var(--radius-8);
+  }
+}
 
 /*------------------------ */
 
 @media screen and (max-width: 768px) {
-    .about .info-about {
-        width: 90%;
-    }
+  .about .info-about {
+    width: 90%;
+  }
 
-    .about .info-about .section-title {
-        font-size: 7vmin;
-    }
+  .about .info-about .section-title {
+    font-size: 7vmin;
+  }
 
-    .about .info-about .section-subtitle {
-        font-size: 5.5vmin;
-    }
+  .about .info-about .section-subtitle {
+    font-size: 5.5vmin;
+  }
 
-    .about .info-about .section-paragraph {
-        font-size: 4vmin;
-        text-align: justify;
-    }
+  .about .info-about .section-paragraph {
+    font-size: 4vmin;
+    text-align: justify;
+  }
 }
